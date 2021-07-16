@@ -1,0 +1,12 @@
+<h1>新規投稿</h1>
+
+<%= form_for @tweet do |f| %>
+
+  <%= f.label :file %>
+  <%= f.file_field :file , :size => 140 %>
+　
+　
+  <%= f.submit "送信" %>
+
+<%= link_to 'Back', tweets_path %>
+<% end %>
